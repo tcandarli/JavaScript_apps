@@ -5,12 +5,16 @@
     font-size: 1.6em;
 }
 
+section:first-child{
+    
+}
 
-#inputs {
+input[type=text] {
     line-height: 4;
     width: 330px;
     height: 30px;
     font-family: helvetica, Arial;
+    font-size: 18px;
     color: brown;
 }
 

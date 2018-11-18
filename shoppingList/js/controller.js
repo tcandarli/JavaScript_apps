@@ -12,9 +12,9 @@ $(document).ready(() => {
 
     $("input[type=image]").on("click", function () {
         // Add item to the list
-        let shoppingListItem = $("#inputItem").val();
+        let listItem = $("#inputItem").val();
         $("#inputItem").val("");
-        let list = addItemToList(inputItem);
+        let list = addItemToShoppingList(listItem);
 
         renderList(list);
     });
