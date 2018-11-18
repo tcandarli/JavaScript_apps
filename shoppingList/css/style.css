@@ -1,0 +1,65 @@
+
+.h1 {
+    font-family: 'Lucida Sans', Verdana;
+    color: tomato;
+    font-size: 1.6em;
+}
+
+
+#inputs {
+    line-height: 4;
+    width: 330px;
+    height: 30px;
+    font-family: helvetica, Arial;
+    color: brown;
+}
+
+input[type=image] {
+    position: relative;
+    width: 35px;
+    top: 10px;
+}
+
+.itemList li {
+    font-family: Geneva, tahoma;
+    font-size: 17px;
+    height: 30px;
+    padding: 5px 0px;
+    cursor: pointer;
+    width: 295px;
+    background: #f1f1f1;
+    margin-bottom: 2px;
+    transition: all 0.5s;
+}
+
+.itemList li:hover {
+    background: aliceblue;
+}
+
+li:hover sup {
+    display: inline;
+}
+
+sup {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    float: right;
+    background: red;
+    transition: all 0.3s;
+    display: none;
+}
+
+sup:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.finished {
+    text-decoration: line-through;
+    color: #aaa;
+}

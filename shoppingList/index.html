@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping List</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <h1 class="h1">Shopping list</h1>
+            <input id="inputItem" type="text" placeholder="Enter elements for shopping...">
+            <input id="addButton" type="image" src="./images/Custom-Icon-Design-Flatastic-1-Add-1.svg">
+        </section>
+
+        <section id="list_container">
+            <ul class="itemList">
+                <li>
+                    Tomato <sup class=bought>x</sup>
+                </li>
+                <li>
+                    Orange <sup class="bought">x</sup>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+
+    <script src="js/model.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>
