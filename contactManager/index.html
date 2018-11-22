@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <title>Contact Manager</title>
+</head>
+
+<body>
+
+    <main class="main">
+
+        <div class="search--list">
+            <h1>Contact Manager</h1><br>
+        <div class="search_container">
+            <input class="search_input" type="text" placeholder="Search" />
+        </div>
+            <button class="btn btn--new" type="button">Add new contact</button>
+            <div class="contacts">
+                <table>
+                    <header>
+                        <tr>
+                            <td>Firstname</td>
+                            <td>Lastname</td>
+                            <td>Email</td>
+                        </tr>
+                        <tr>
+                            <td>Name1</td>
+                            <td>Lastname1</td>
+                            <td>Email1</td>
+                        </tr>
+                        <tr>
+                            <td>Name2</td>
+                            <td>Lastname2</td>
+                            <td>Email2</td>
+                        </tr>
+                    </header>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="form--buttons">
+            <div class="contact_form">
+
+                <form action="">
+                    <label for="firstname">Firstname:</label>
+                    <input type="text" name="firstname" id="firstname"> <br>
+                    <label for="lastname">Lastname:</label>
+                    <input type="text" name="lastname" id="lastname"> <br>
+                    <label for="Email">Email:</label>
+                    <input type="text" name="Email" id="Email"> <br>
+                    <label for="Phone1">Phone1:</label>
+                    <input type="text" name="Phone1" id="Phone1"> <br>
+                    <label for="Phone2">Phone2:</label>
+                    <input type="text" name="Phone2" id="Phone2">
+
+                </form>
+            </div>
+
+            <div class="buttons">
+                <button class="btn btn--save" type="button">Save</button>
+                <button class="btn btn--delete" type="button">Delete</button>
+
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="./js/contact.js"></script>
+    <script src="./js/controller.js"></script>
+    <script src="./js/storage.js"></script>
+</body>
+
+</html>

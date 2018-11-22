@@ -1,0 +1,70 @@
+@use pos
+
+
+main {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+
+/* .search {
+    &_container {
+        padding-top: 64px;
+    }
+    width: 250px;
+    height: 30px;
+} */
+
+.btn {
+    font-size: 0.8rem;
+    background: #fff;
+    color: #192127;
+    
+    padding: 1em;
+    margin:0;
+    
+    border: 1px solid #e3e5e9;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    cursor: pointer;
+  }
+
+  .btn--new {
+    background-color:green;
+    color: #fff;
+    border: 1px solid;
+  }
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.search--list {
+    display: flex;
+    flex-direction: column;
+}
+
+.form--buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+  .btn--save {
+    background-color: #2c9cf2;
+    color: #fff;
+    border: 1px solid;
+  }
+  .btn--delete {
+    background-color: red;
+    color: #fff;
+    border: 1px solid;
+  }
