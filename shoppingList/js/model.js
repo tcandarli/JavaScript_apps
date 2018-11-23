@@ -25,18 +25,16 @@
 
  /***************
   * 
-  * Find item from list and mark it. 
+  * Find item in the list and mark it. 
   * Then move it to the and of list
   * @param{*} name
   */
 
   function checkItemAsDone(name) {
       let listString = localStorage.getItem("shoppingList");
-
       let list = JSON.parse(listString);
       let item = list.find(item => item.name === name);
       item.added = true;
-
       listString = JSON.stringify(list);
       localStorage.setItem("shoppingList", listString);
   }
