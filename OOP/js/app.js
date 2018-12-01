@@ -20,7 +20,13 @@ function InterestingClass() {
     }
 }
 
-let interesting = new InterestingClass();
+let interestingAction = new InterestingClass();
 
 let John = new Human(41);
 let Mike = new Human(22);
+
+console.log(John.tellYourAge());
+
+interestingAction.doSomethingInteresting(John);
+
+console.log(John.tellYourAge());
