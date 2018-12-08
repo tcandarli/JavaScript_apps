@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object Oriented Analysis and Design</title>
+</head>
+
+<body>
+
+    <h1>Balon Hikayesi</h1>
+    <p>
+        <h3>Requirements (Gereksinimler) - a Use Case</h3>
+        Ekranda baloncu bir amca olacaki ve kullanici kendisine balon sayisini soyleyecek.
+        * Daha sonra "balonlarimi ver" dediginde, baloncu amca, balonlari sisirerek
+        * (Bu balonlarin renk ve buyukluklerinin de rastgele secilmis olmasi gerekiyor.)
+        kullaniciya verir.
+        * Kullanici parka dagitir.
+        * Kullanici istedigi balonlari patlatabilecek.
+        * Patlayan balonlar park copcusu tarafindan toplanacak.
+
+
+    </p>
+
+    <h3>Analysis (OOA - OOD)</h3>
+    <ul>
+        <li>a1) Objects: Park, Balouncu, Balon, Copcu, Kullanici</li>
+        <li>a2) Object Properties and Methods
+            <ol>
+                <li>Park:
+                    <ul>
+                        <li>Bir alani var</li>
+                        <li>Copculeri olur</li>
+                        <li>Balon sayini balon durumlarina gore soyleyebilir</li>
+                        <li>Balonlari rastgele dagitma</li>
+                        <li>Istenilan (lokasyon/isim/numarasi) balonu geri verebilir</li>
+                    </ul>
+
+                </li>
+                <li>Baloncu:
+                    <ul>
+                        <li>Balon sayisini alabiliyor</li>
+                        <li>Balon sisirilebiliyor</li>
+                        <li>Balonlarin rengi ve buyukluklerini belirleyebilir</li>
+                        <li><del>Ucretini aliyor</del></li>
+                    </ul>
+
+                </li>
+                <li>Balon:
+                    <ul>
+                        <li>Ebati var</li>
+                        <li>Rengi var</li>
+                        <li>Lokasyon</li>
+                        <li>Durumu [dokunulmamis | sisirilmis | patlamis] </li>
+                        <li><del>ucabilirlik [true | false]</del></li>
+                        <li>Balon patlar</li>
+                        <li>Balon siser</li>
+                        <li>Balon hareket et</li>
+                    </ul>
+                </li>
+                <li>Copcu
+                    <ul>
+                        <li>Cop torbasi</li>
+                        <li>Patlamis balonlari toplar</li>
+
+
+                    </ul>
+                </li>
+                <li>Kullanici
+                    <ul>
+                        <li>Balon sayisini soyler</li>
+                        <li>Balon satin alir</li>
+                        <li>Balon patlatir</li>
+                    </ul>
+
+                </li>
+            </ol>
+        </li>
+        <li>a3) Interaction between objects
+            <ol>
+                <li>Kullanici balonlari baloncudan temin eder</li>
+                <li>Baloncu balonlari sisirir</li>
+                <li>Kullanici balonlari parka dagitir</li>
+                <li>Copcu balonlari toplar</li>
+                <li>Kullanici balonlari park uzerinden patlatir</li>
+                <li>Park balonlarin lokasyonunu belirler</li>
+            </ol>
+        </li>
+    </ul>
+
+</body>
+
+</html>
