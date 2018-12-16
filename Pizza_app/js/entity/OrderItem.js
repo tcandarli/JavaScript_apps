@@ -3,8 +3,14 @@ class OrderItem {
         count,
         type
     ) {
-        this.orderItemId = new Date().getTime();
+        this.orderItemId = new this.getUniqueId;
+        this.count = count;
+        this.type = type;
 
+    }
+
+    getUniqueId() {
+        return new Date().getTime() - Math.floor(Math.random() * 1000);
     }
 
     getCount() {
