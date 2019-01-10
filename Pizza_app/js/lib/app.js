@@ -1,5 +1,8 @@
 
 // EXTRAS
+let beverageHelper = new BeverageFactory();
+
+
 const olive = new Extra("olive", 2);
 const meat = new Extra("meat", 5);
 const tomatoe = new Extra("tomatoe", 2);
