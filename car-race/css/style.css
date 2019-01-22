@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+#raceArea{
+    background-color: #cccccc;
+}
+
+section{
+    width: 600px;
+    border-bottom: 1px solid #999;
+    display: flex;
+    align-items: center;
+}
+
+section span{
+    display: inline-block;
+    position: relative;
+}
